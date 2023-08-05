@@ -1,0 +1,231 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: hsl(0, 0%, 98%);
+      font-family: 'Epilogue', sans-serif;
+    }
+    header{
+      width: 100%;
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-between;
+      height: 70px;
+      z-index: 2;
+      font-size: 24px;
+    }
+    .firstheader {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+    .secondheader {
+      padding-top: 20px;
+      margin-right: 10px;
+    }
+    .secondheader img {
+      cursor: pointer;
+    }
+    nav {
+      padding-top: 20px;
+      display: none;
+      z-index: 3;
+      background-color: white;
+      height: 100vh;
+      width: 50%;
+      font-size: 16px;
+    
+    }
+    nav .hide {
+      float: right;
+      cursor: pointer;
+      margin-right: 10px;
+      
+    }
+    ul{
+      padding-top: 20px;
+      list-style-type: none;
+    }
+   
+    .drop {
+      display: inline;
+      position: relative;
+    }
+    #drop-content, #drop-content2{
+      display: none;
+      margin-left: 5px;
+     
+    }
+    section img {
+      width: 100%;
+    }
+    span{
+      cursor: pointer;
+    }
+    .section2 div {
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 50px;
+      text-align: center;
+      font-size: 25px;
+    }
+    .section2 div h1 {
+      font-weight: bolder;
+    }
+    .section2 div a {
+      background-color: black;
+      padding: 15px 20px;
+      border-radius: 20px;
+      color: hsl(0, 0%, 98%);
+      text-decoration: none;
+    }
+    
+    .section3 {
+      margin-top: 70px;
+      position: relative;
+    }
+    .section3 .items {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: space-evenly;
+      position: absolute;
+      margin-left: 5%;
+    }
+    .section3 img {
+      width: 50px;
+      padding: 10px;
+    }
+    #drop-content p > img {
+      margin-right: 10px;
+    }
+    .drop img{
+      margin-left: 10px;
+    }
+    .ul11 li {
+      margin-bottom: 50px;
+    }
+    .subul {
+      text-align: center;
+    }
+    .subul ul li:last-child{
+     border-radius: 20px;
+     border: 1px solid black;
+     padding: 10px 30px;
+     display: inline-block;
+     text-align: center;
+     margin-top: 10px;
+    }
+    #pic2 {
+      display: none;
+    }
+   @media screen and (min-width:700px) {
+    .section3 img {
+      width: 120px;
+      padding: 30px;
+    }
+    .section3 .items {
+      margin-left: 0;
+    }
+   }
+    @media screen and (min-width:1440px) {
+      header {
+        display:block;
+        width: 100%;
+      }
+      .firstheader {
+        padding: 0px 20px;
+      }
+      .secondheader{
+        display: none;
+      }
+      nav .hide {
+        display: none;
+      }
+      nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        padding-top: 0px;
+        padding: 100px;
+      z-index: 3;
+      justify-content: space-between;
+      background-color: none;
+      height: 0;
+      width: 100%;
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-top: -100px;
+      padding: 0px;
+      float: right;  
+      font-size: 24px;
+      
+      }
+      .ul11 {
+       margin-left: 150px;
+      }
+     nav .subul{
+        justify-self: flex-end;
+        margin-right: 50px;
+      }
+      nav ul {
+        display: flex;
+      }
+      nav ul li {
+        display: inline;
+        padding: 0px 20px;
+      }
+      
+      #drop-content, #drop-content2{
+        margin-left: 0px;
+        background-color: white;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 20px whitesmoke;
+      }
+      .subul ul li:last-child{
+        margin-top: -10px;
+      }
+      .section2 .content{
+        text-align: left;
+        font-size: 30px;
+      }
+      .section2 .content h1{
+        font-size: 80px;
+        font-weight: bolder;
+      }
+      .section2 .content div{
+        text-align: left;
+        margin-left: -9px;
+      }
+      .section3 img {
+        width: 150px;
+        padding: 0;
+      }
+      main {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+      width: 90%;
+      margin: 250px auto;
+
+      }
+      .section1 img{
+        width: 700px;
+        margin-top: -250px;
+      }
+    #pic1 {
+      display: none;
+    }
+    #pic2 {
+      display: block;
+    }
+    .compose {
+      width: 50%;
+    }
+    }
+    /*.drop:hover .drop-content {
+      display: block;
+    }*/
+    
