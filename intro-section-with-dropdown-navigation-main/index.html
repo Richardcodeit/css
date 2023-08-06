@@ -22,7 +22,7 @@
       <img src="images/icon-close-menu.svg" alt="" class="hide" onclick="hideit()">
       <ul class="ul11">
                <li>
-                <div class="drop"><span onclick="doit()" onmousedown="ditit()">Feature <img src="images/icon-arrow-down.svg" alt="" id="root"></span>
+                <div class="drop"><span onclick="doit()" ondblclick="ditit()">Feature <img src="images/icon-arrow-down.svg" alt="" id="root"></span>
                  <div id="drop-content">
                  <p> <img src="images/icon-todo.svg" alt="">TO-DO List</p>
                  <p> <img src="images/icon-calendar.svg" alt=""> Calender</p>
@@ -53,7 +53,8 @@
                 image2.src = "images/icon-arrow-up.svg"
               }
               function ditit(){
-                content.style.display="block"
+                content.style.display="none"
+                image.src = "images/icon-arrow-down.svg"
               }
               function drip(){
                 content2.style.display="none"
